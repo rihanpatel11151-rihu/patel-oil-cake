@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patel Oil Cake Industry</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">🌿 Patel Oil Cake Industry</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+    <div class="cart-icon" onclick="toggleCart()">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Pure & Natural Agricultural Products</h1>
+      <p>Premium quality Oil, Khali, Bardan and more — directly from our industry to your doorstep.</p>
+      <a href="#products" class="btn">Shop Now</a>
+      <a href="enquiry.html" class="btn btn-outline">Get Quote</a>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <h2>Browse Categories</h2>
+    <div class="cat-grid">
+      <div class="cat-card" onclick="filterProducts('oil')"><img src="images/Groundnut Oilimages.webp" alt="Oil" onerror="this.style.display='none'"/> Oil</div>
+      <div class="cat-card" onclick="filterProducts('khali')"><img src="images/Groundnut Khaliground-nut-oil-cake-500x500.webp" alt="Khali" onerror="this.style.display='none'"/> Khali</div>
+      <div class="cat-card" onclick="filterProducts('bardan')"><img src="images/jutebardenproduct-jpeg-1000x1000.webp" alt="Bardan" onerror="this.style.display='none'"/> Bardan</div>
+      <div class="cat-card" onclick="filterProducts('all')">📦 All Products</div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>Patel Oil Cake Industry has been serving farmers and businesses with high-quality agricultural products for over 20 years. We deal in pure edible oils, oil cakes (khali), and packaging materials (bardan) at wholesale and retail prices.</p>
+      <div class="stats">
+        <div><h3>20+</h3><p>Years Experience</p></div>
+        <div><h3>500+</h3><p>Happy Customers</p></div>
+        <div><h3>50+</h3><p>Products</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📍 Patel Oil Cake Industry | 📞 +91 7489751694 | ✉️ pateloilcake@gmail.com</p>
+    <p>&copy; 2024 Irfan Patel Oil Cake Industry. All rights reserved.</p>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <span onclick="toggleCart()" style="cursor:pointer;font-size:1.4rem;">&times;</span>
+    </div>
+    <div id="cartItems"><p class="empty-cart">Cart is empty</p></div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <p>Total: ₹<span id="cartTotal">0</span></p>
+      <a href="enquiry.html" class="btn" style="display:block;text-align:center;">Enquire for Order</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay" onclick="toggleCart()"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
