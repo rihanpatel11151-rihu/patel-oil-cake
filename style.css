@@ -23,8 +23,8 @@ body { font-family: 'Segoe UI', sans-serif; color: #333; }
 
 /* HERO */
 .hero {
-   background: linear-gradient(135deg, #1a5c2a 0%, #2e8b57 50%, #f5a623 100%); 
-  /* background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('images/WhatsApp Image 2025-06-28 at 21.53.59_70d760ec.jpg') center/cover no-repeat; */
+   /* background: linear-gradient(135deg, #1a5c2a 0%, #2e8b57 50%, #f5a623 100%); */
+   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('images/WhatsApp Image 2025-06-28 at 21.53.59_70d760ec.jpg') center/cover no-repeat; 
   min-height: 88vh; display: flex; align-items: center; justify-content: center;
   text-align: center; padding: 40px 20px;
 }
