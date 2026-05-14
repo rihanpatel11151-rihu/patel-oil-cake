@@ -146,9 +146,29 @@ footer { background: #111; color: #aaa; text-align: center; padding: 20px; font-
   .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: #1a5c2a; padding: 20px; gap: 16px; }
   .nav-links.open { display: flex; }
   .hamburger { display: block; }
-  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
   .enquiry-container { grid-template-columns: 1fr; }
   .products-section, .categories, .enquiry-page { padding: 40px 20px; }
   .stats { gap: 30px; }
   .navbar { padding: 14px 20px; }
+  .cat-grid { gap: 12px; }
+  .cat-card { min-width: 100px; padding: 12px 20px; font-size: 1rem; }
+  .cat-card img { width: 48px; height: 48px; }
+  .product-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  .cart-sidebar { width: 100vw; right: -100vw; }
+  .btn-outline { margin-left: 0; margin-top: 12px; }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 1.6rem; }
+  .hero { padding: 20px 15px; }
+  .categories, .products-section { padding: 30px 15px; }
+  .navbar { padding: 12px 15px; }
+  .logo { font-size: 1.1rem; }
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .cat-grid { flex-direction: column; align-items: center; }
+  .cat-card { width: 200px; }
+  .stats { flex-direction: column; gap: 20px; }
+  .enquiry-info, .enquiry-form { padding: 24px; }
 }
